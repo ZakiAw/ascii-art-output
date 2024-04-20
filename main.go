@@ -16,7 +16,8 @@ func main() {
 	fileo,_ := os.Create(file)
 
 	if len(os.Args) != 4 {
-		fmt.Print("wrong number of arguments\nUsage: go run main.go [string] [font]\nEx: go run main.go \"Hello\" shadow")
+		fmt.Println("Usage: go run . [OPTION] [STRING] [BANNER]\nExample: go run . --output=<fileName.txt> something standard")
+		os.Exit(0)
 	} else {
 		//////////////////////////
 		//  specify & use input //
